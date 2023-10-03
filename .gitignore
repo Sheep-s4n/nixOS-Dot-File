@@ -1,0 +1,10 @@
+# ignoring all files by default
+/*
+!.gitignore
+!README.MD
+
+!waybar/
+!kitty/
+!neofetch/
+!wpaperd/
+!hypr/
