@@ -1,7 +1,7 @@
 # ignoring all files by default
 /*
 !.gitignore
-!README.MD
+!README.md
 
 !waybar/
 !kitty/
