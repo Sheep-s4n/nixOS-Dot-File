@@ -9,37 +9,22 @@
     // Choose the order of the modules
     "modules-left": ["custom/workspace1", "custom/workspace2" , "custom/workspace3", "custom/workspace4" , "custom/workspace5"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["pulseaudio", "network", "cpu", "memory", "battery", "tray", "clock"],
- 
-"hyprland/workspaces": {
-        "disable-scroll": true,
-        "all-outputs": false,
-        "format": "{icon}",
-        "format-icons": {
-            "1:web": "",
-            "2:code": "",
-            "3:term": "",
-            "4:work": "",
-            "5:music": "",
-            "6:docs": "",
-            "urgent": "",
-            "focused": "",
-            "default": ""
-        }
-    },
+    "modules-right": ["pulseaudio", "network", "cpu", "disk", "battery", "tray", "clock"],
 
     "tray": {
         // "icon-size": 21,
-        "spacing": 10
+        "spacing": 10,
     },
     "clock": {
         "format-alt": "{:%Y-%m-%d}"
     },
     "cpu": {
-        "format": "{usage}% "
+	"interval": 5,
+        "format": "{usage}% "
     },
-    "memory": {
-        "format": "{}% "
+    "disk": {
+      "interval": 60,
+      "format": "{percentage_used}% 󰋊",
     },
     "battery": {
         "bat": "BAT0",
@@ -60,7 +45,7 @@
         "format-disconnected": "Disconnected ⚠"
     },
     "pulseaudio": {
-        //"scroll-step": 1,
+        "scroll-step": 0.5,
         "format": "{volume}% {icon}",
         "format-bluetooth": "{volume}% {icon}",
         "format-muted": "",
@@ -73,7 +58,7 @@
             "car": "",
             "default": ["", ""]
         },
-        "on-click": "pavucontrol"
+        "on-click": "hyprctl dispatch exec [float] pavucontrol"
     },
    
     "hyprland/window": {
