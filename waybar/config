@@ -7,9 +7,9 @@
     "margin-right" : 11,
     //"width": 1650, // Waybar width
     // Choose the order of the modules
-    "modules-left": ["custom/workspace1", "custom/workspace2" , "custom/workspace3", "custom/workspace4" , "custom/workspace5"],
+    "modules-left": ["clock", "custom/workspace1", "custom/workspace2" , "custom/workspace3", "custom/workspace4" , "custom/workspace5"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["pulseaudio", "network", "cpu", "disk", "battery", "tray", "clock"],
+    "modules-right": ["pulseaudio", "cpu", "disk", "battery","network", "tray"],
 
     "tray": {
         // "icon-size": 21,
@@ -19,7 +19,7 @@
         "format-alt": "{:%Y-%m-%d}"
     },
     "cpu": {
-	"interval": 5,
+	"interval": 1,
         "format": "{usage}% "
     },
     "disk": {
@@ -40,7 +40,7 @@
     },
     "network": {
         // "interface": "wlp2s0", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-wifi": "{essid} ({signalStrength}%)",
         "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
         "format-disconnected": "Disconnected ⚠"
     },

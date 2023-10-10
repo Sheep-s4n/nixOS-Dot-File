@@ -58,7 +58,7 @@ window#waybar {
 }
 
 .modules-left {
-    padding: 0 8px 0 8px;
+    padding: 0 0 0 0;
 }
 
 
@@ -88,10 +88,6 @@ window#waybar {
     border-radius: 20px;
 }
 
-#clock, #battery, #cpu, #memory, #network, #pulseaudio, #custom-spotify, #tray, #mode {
-    padding: 0 3px;
-    margin: 0 2px;
-}
 
 #clock {
     font-weight: bold;
@@ -104,14 +100,15 @@ window#waybar {
     color : red;
 }
 
-#battery.charging {
-}
-
 @keyframes blink {
     to {
         background-color: #ffffff;
         color: black;
     }
+}
+
+#battery.charching {
+   color: green;
 }
 
 #battery.warning:not(.charging) {
@@ -123,19 +120,35 @@ window#waybar {
     animation-direction: alternate;
 }
 
+#mode,
 #battery,
-#clock,
 #disk,
 #cpu,
 #memory,
-#pulseaudio,
-#network {
-padding : 3px 10px 3px 10px;
-border-radius: 20px;
-background: rgba(0,0,0,0.4);  
+#pulseaudio {
+  padding : 3px 10px 3px 10px;
+  border-radius: 20px;
+  background: rgba(0,0,0,0.4);  
+  margin : 0 2px 0 2px;
 }
 
+#clock {
+  background: rgba(0,0,0,0.4);
+  border-radius: 20px;
+  padding: 0 10px 0 10px;
+  margin-right: 5px
+}
 
+#tray, #network {
+  padding : 3px 10px 3px 5px;
+  background: rgba(0,0,0,0.4);
+  border-radius : 0 20px 20px 0;
+}
+
+#network {
+  border-radius: 20px 0 0 20px;
+  padding : 3px 0px 3px 10px;
+}
 #network.disconnected {
     background: #f53c3c;
 }
