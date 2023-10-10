@@ -107,9 +107,6 @@ window#waybar {
     }
 }
 
-#battery.charching {
-   color: green;
-}
 
 #battery.warning:not(.charging) {
     color: white;
@@ -148,16 +145,19 @@ window#waybar {
 #network {
   border-radius: 20px 0 0 20px;
   padding : 3px 0px 3px 10px;
+  color : #b5f3ff;
 }
+
 #network.disconnected {
     background: #f53c3c;
 }
 
-
-
 #pulseaudio.muted {
+  font-size: 17px;
+  color: #ff9c9c;
 }
 
-#tray {
+.charging {
+   color: #9cffc9;
 }
 

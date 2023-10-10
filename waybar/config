@@ -29,14 +29,16 @@
     "battery": {
         "bat": "BAT0",
         "states": {
-            // "good": 95,
+            "good": 93,
             "warning": 30,
             "critical": 15
         },
+        "format-charging" : "{capacity}% {icon} 󱐋",
         "format": "{capacity}% {icon}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": ["", "", "", "", ""],
+        "interval" : 10,
     },
     "network": {
         // "interface": "wlp2s0", // (Optional) To force the use of this interface
@@ -48,7 +50,7 @@
         "scroll-step": 0.5,
         "format": "{volume}% {icon}",
         "format-bluetooth": "{volume}% {icon}",
-        "format-muted": "",
+        "format-muted": "󰝟",
         "format-icons": {
             "headphones": "",
             "handsfree": "",
@@ -56,7 +58,7 @@
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["", ""]
+            "default": ["","󰕾", ""]
         },
         "on-click": "hyprctl dispatch exec [float] pavucontrol"
     },
