@@ -120,8 +120,7 @@ window#waybar {
 #mode,
 #battery,
 #disk,
-#cpu,
-#memory,
+#custom-brightness,
 #pulseaudio {
   padding : 3px 10px 3px 10px;
   border-radius: 20px;
@@ -157,7 +156,14 @@ window#waybar {
   color: #ff9c9c;
 }
 
-.charging {
+#disk {
+  color : #a8beff;
+}
+
+#battery {
    color: #9cffc9;
 }
 
+#custom-brightness {
+   color: #fdffc4;
+}

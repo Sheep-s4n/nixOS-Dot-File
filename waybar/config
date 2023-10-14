@@ -9,7 +9,7 @@
     // Choose the order of the modules
     "modules-left": ["clock", "custom/workspace1", "custom/workspace2" , "custom/workspace3", "custom/workspace4" , "custom/workspace5"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["pulseaudio", "cpu", "disk", "battery","network", "tray"],
+    "modules-right": ["pulseaudio", "custom/brightness", "disk", "battery","network", "tray"],
 
     "tray": {
         // "icon-size": 21,
@@ -66,7 +66,13 @@
     "hyprland/window": {
         "max-length": 50,
     },
-  
+   
+   "custom/brightness": {
+     "format" : "{} 󰃞",
+     "signal" : 11,
+     "exec" : "~/.config/waybar/scripts/Brightnessctl.sh",
+     "interval" : 60
+   },
  
    "custom/spotify": {
         "format": " {}",
@@ -75,7 +81,7 @@
         "exec": "$HOME/.config/waybar/mediaplayer.sh 2> /dev/null", // Script in resources folder
         "exec-if": "pgrep spotify"
     },
-    
+
     "custom/workspace1": {
         "format": "{}",
 	"return-type": "json",
