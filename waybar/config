@@ -7,7 +7,7 @@
     "margin-right" : 11,
     //"width": 1650, // Waybar width
     // Choose the order of the modules
-    "modules-left": ["clock", "custom/workspace1", "custom/workspace2" , "custom/workspace3", "custom/workspace4" , "custom/workspace5"],
+    "modules-left": ["custom/menu","clock", "custom/workspace1", "custom/workspace2" , "custom/workspace3", "custom/workspace4" , "custom/workspace5"],
     "modules-center": ["hyprland/window"],
     "modules-right": ["pulseaudio", "custom/brightness", "disk", "battery","network", "tray"],
 
@@ -71,9 +71,14 @@
      "format" : "{} 󰃞",
      "signal" : 11,
      "exec" : "~/.config/waybar/scripts/Brightnessctl.sh",
-     "interval" : 60
+     "interval" : 60,
+     "on-scroll-up": "~/.config/hypr/scripts/brightness_up.sh 1",
+     "on-scroll-down": "~/.config/hypr/scripts/brightness_down.sh 1",
    },
- 
+   "custom/menu": {
+     "format" : "🐑",
+     "on-click" : "wofi --gtk-dark --allow-images --term=foot --show run"
+   },
    "custom/spotify": {
         "format": " {}",
         "max-length": 40,

@@ -120,6 +120,7 @@ window#waybar {
 #mode,
 #battery,
 #disk,
+#custom-menu,
 #custom-brightness,
 #pulseaudio {
   padding : 3px 10px 3px 10px;
@@ -129,7 +130,7 @@ window#waybar {
 }
 
 #clock {
-  background: rgba(0,0,0,0.4);
+  font-size : 15px;
   border-radius: 20px;
   padding: 0 10px 0 10px;
   margin-right: 5px
@@ -166,4 +167,9 @@ window#waybar {
 
 #custom-brightness {
    color: #fdffc4;
+}
+
+#custom-menu {
+  margin-left: 0;
+  font-size: 18px; 
 }
