@@ -77,7 +77,7 @@
    },
    "custom/menu": {
      "format" : "🐑",
-     "on-click" : "wofi --gtk-dark --allow-images --term=foot --show run"
+     "on-click" : "wofi --gtk-dark -n --term=foot --show run"
    },
    "custom/spotify": {
         "format": " {}",
