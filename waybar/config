@@ -16,7 +16,9 @@
         "spacing": 10,
     },
     "clock": {
-        "format-alt": "{:%Y-%m-%d}"
+        "interval" : 1,
+        "format" : "{:%H:%M:%S}",
+        "format-alt": "{:%d/%m/%Y}"
     },
     "cpu": {
 	"interval": 1,
@@ -142,7 +144,6 @@
     },
 
     "wlr/taskbar": {
-      "max-length": 5,
       "format": "{icon} {name}",
       "icon-size": 16,
       "tooltip": true,
@@ -150,5 +151,6 @@
       "sort-by-app-id" : true,
       "on-click": "activate",
       "on-click-right": "close",
+      "ignore-list" : ["kitty"],  
     },
 }

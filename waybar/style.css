@@ -196,3 +196,7 @@ window#waybar {
 #taskbar button:hover {
   background : transparent;
 }
+
+#taskbar button.active {
+  color : white;
+}
