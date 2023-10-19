@@ -52,6 +52,10 @@ window#waybar {
     margin-left: 20px;
 }
 
+.modules-center {
+    padding : 0 0 0 10px;
+}
+
 .modules-right {
     padding : 0;
     background-color: rgba(0,0,0,0);
@@ -122,6 +126,7 @@ window#waybar {
 #disk,
 #custom-menu,
 #custom-brightness,
+#custom-power_off,
 #pulseaudio {
   padding : 3px 10px 3px 10px;
   border-radius: 20px;
@@ -172,4 +177,22 @@ window#waybar {
 #custom-menu {
   margin-left: 0;
   font-size: 18px; 
+}
+
+#custom-power_off {
+  color: #00ADEF;
+}
+
+#window {
+  padding : 3px 10px 3px 0;
+}
+
+#taskbar button {
+  padding : 3px 5px 3px 5px;
+  color : #dbdbdb;
+  font-weight : bold;
+}
+
+#taskbar button:hover {
+  background : transparent;
 }
