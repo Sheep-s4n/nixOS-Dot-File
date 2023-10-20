@@ -86,9 +86,9 @@
 
    "custom/power_off" : {
      "format" : "",
-     "on-click" : "reboot",
+     "on-click" : "~/.config/waybar/scripts/Reboot.sh",
      "tooltip" : false,
-  },
+   },
 
    "custom/spotify": {
         "format": " {}",
