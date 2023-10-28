@@ -148,7 +148,7 @@ window#waybar {
 }
 
 #network.disconnected {
-    color: #f53c3c;
+    coloré: #f53c3c;
 }
 
 #pulseaudio.muted {
