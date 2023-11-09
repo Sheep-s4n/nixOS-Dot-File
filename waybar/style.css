@@ -36,6 +36,7 @@ window#waybar {
     margin-left: 20px;
 }
 
+
 .custom {
  padding-left: 10px;
 }
@@ -49,6 +50,7 @@ window#waybar {
 
 .modules-center {
     padding : 0 0 0 10px;
+    background-color : #000d1a;
 }
 
 .modules-right {
@@ -125,7 +127,7 @@ window#waybar {
 #pulseaudio {
   padding : 3px 10px 3px 10px;
   border-radius: 20px;
-  background: rgba(0,0,0,0.5);  
+  background:  #000d1a;
   margin : 0 2px 0 2px;
 }
 
@@ -137,7 +139,7 @@ window#waybar {
 
 #tray, #network {
   padding : 3px 10px 3px 5px;
-  background: rgba(0,0,0,0.5);
+  background: #000d1a;
   border-radius : 0 20px 20px 0;
 }
 
